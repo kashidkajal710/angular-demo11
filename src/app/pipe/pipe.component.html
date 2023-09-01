@@ -1,0 +1,17 @@
+<p>pipe works!</p>
+<!-- <h3>{{message | myLowerCase}}</h3> -->
+<div>
+  <h3>City Name</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" name="cityName" [(ngModel)]="cityName" />
+    </div>
+  </div>
+  <div class="row">
+  <div col-md-12>
+    <ul>
+        <li *ngFor="let item of cityNames|searchpipe:cityName;let i=index">{{item}}</li>
+    </ul>
+</div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<p>pipe-assingenment works!</p>
+<h3 style="border: 1px solid black;background-color: black;color: white;">before appling pipe</h3>
+<div class="table table-secondory">
+    <table>
+        <thead class="table-dark">
+         <tr>
+            <th>Emp Name</th>
+            <th>Emp Salary</th>
+            <th>Emp Gender</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let val of Employee ">
+            <td>{{val.EmpName}}</td>
+            <td>{{val.EmpSalary}}</td>
+            <td>{{val.gender}}</td>
+            
+         </tr>
+        </tbody>
+    </table>
+</div>
+<h3 style="border: 1px solid black;background-color: black;color: white;">After Appling Pipe</h3>
+<div class="container mt-4" class="table table-secondory" class="table table-secondory">
+    <table>
+        <thead class="table-dark">
+         <tr>
+            <th >Emp Name</th>
+            <th>Emp Salary</th>
+            <th>Emp Gender</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let val of Employee ">
+            <td style="background-color: red;color: white;" >{{val.EmpName | myLowerCase:val.gender}}</td>
+            <td>{{val.EmpSalary}}</td>
+            <td>{{val.gender}}</td>
+            
+         </tr>
+        </tbody>
+    </table>
+</div>
