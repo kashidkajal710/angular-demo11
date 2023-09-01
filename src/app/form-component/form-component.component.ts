@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-form-component',
   templateUrl: './form-component.component.html',
   styleUrls: ['./form-component.component.css']
 })
-export class FormComponentComponent {
-
+export class FormComponentComponent implements OnInit{
+ ngOnInit() {
+   console.log("Goood morning")
+ }
 }
